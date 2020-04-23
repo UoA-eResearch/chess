@@ -34,7 +34,6 @@ for i, move in enumerate(first_game.mainline_moves()):
     board.push(move)
     if board.is_game_over():
         print(board.result())
-    continue
     piece_type = chess.piece_name(board.piece_type_at(move.to_square))
     for name, image in images.items():
         if name.startswith(piece_type):
